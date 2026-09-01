@@ -1,0 +1,852 @@
+```html
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Japan Language Center | চাটমোহর, পাবনা</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial,"Noto Sans Bengali",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+header{
+    background:#b40000;
+    color:white;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(135deg,#b40000,#e53935);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    margin:10px 0 25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#b40000;
+    padding:13px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:5px;
+}
+
+.section{
+    width:92%;
+    max-width:1050px;
+    margin:50px auto;
+}
+
+.section h2{
+    text-align:center;
+    color:#b40000;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 15px rgba(0,0,0,.1);
+}
+
+.card .icon{
+    font-size:40px;
+}
+
+.card h3{
+    color:#b40000;
+    margin:10px 0;
+}
+
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 3px 18px rgba(0,0,0,.1);
+}
+
+.form-group{
+    margin-bottom:17px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:15px;
+}
+
+textarea{
+    height:90px;
+    resize:vertical;
+}
+
+.submit{
+    width:100%;
+    background:#b40000;
+    color:white;
+    border:0;
+    padding:14px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.submit:hover{
+    background:#850000;
+}
+
+#message{
+    display:none;
+    margin-top:15px;
+    padding:15px;
+    background:#e8f5e9;
+    color:#17651c;
+    border-radius:7px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.table-box{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 15px rgba(0,0,0,.1);
+}
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#b40000;
+    color:white;
+    padding:14px;
+    text-align:left;
+}
+
+td{
+    padding:13px;
+    border-bottom:1px solid #eee;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.contact-card .icon{
+    font-size:35px;
+}
+
+.contact-card h3{
+    color:#b40000;
+    margin:8px;
+}
+
+.contact-card a{
+    color:#222;
+    text-decoration:none;
+}
+
+footer{
+    background:#650000;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:50px;
+}
+
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        margin:5px;
+        font-size:14px;
+        display:inline-block;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .cards,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .form-box{
+        padding:20px;
+    }
+
+    th,td{
+        font-size:13px;
+        padding:9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🇯🇵 Japan Language Center
+</div>
+
+<nav>
+<a href="#home">হোম</a>
+<a href="#courses">কোর্স</a>
+<a href="#admission">ভর্তি</a>
+<a href="#students">Student List</a>
+<a href="#contact">যোগাযোগ</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<h1>🇯🇵 Japan Language Center</h1>
+
+<p>
+জাপানি ভাষা শিখুন • নিজের ভবিষ্যৎ গড়ুন
+</p>
+
+<p>
+📍 চাটমোহর নতুন বাজার, পাবনা
+</p>
+
+<a href="#admission" class="btn">
+📝 ভর্তি আবেদন করুন
+</a>
+
+<a href="#students" class="btn">
+🎓 Student List
+</a>
+
+</section>
+
+
+<section class="section" id="courses">
+
+<h2>📚 আমাদের কোর্স</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🇯🇵</div>
+
+<h3>Japanese N5</h3>
+
+<p>
+জাপানি ভাষার প্রাথমিক শিক্ষা,
+Hiragana, Katakana এবং Basic Grammar।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📖</div>
+
+<h3>Japanese N4</h3>
+
+<p>
+Grammar, Vocabulary, Reading
+এবং Listening অনুশীলন।
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎓</div>
+
+<h3>Japan Preparation</h3>
+
+<p>
+জাপানে পড়াশোনা ও কাজের
+প্রস্তুতিমূলক কোর্স।
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="admission">
+
+<h2>📝 Student Admission</h2>
+
+<div class="form-box">
+
+<form id="admissionForm">
+
+<div class="form-group">
+
+<label>
+Student Name *
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="শিক্ষার্থীর নাম"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Date of Birth
+</label>
+
+<input
+type="date"
+id="dob">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Gender *
+</label>
+
+<select id="gender" required>
+
+<option value="">
+নির্বাচন করুন
+</option>
+
+<option>
+পুরুষ
+</option>
+
+<option>
+নারী
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Course *
+</label>
+
+<select id="course" required>
+
+<option value="">
+কোর্স নির্বাচন করুন
+</option>
+
+<option>
+Japanese N5
+</option>
+
+<option>
+Japanese N4
+</option>
+
+<option>
+Japanese N3
+</option>
+
+<option>
+Japan Preparation
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Father's Name *
+</label>
+
+<input
+type="text"
+id="father"
+placeholder="পিতার নাম"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Mobile Number *
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="017XXXXXXXX"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@gmail.com">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Address *
+</label>
+
+<textarea
+id="address"
+placeholder="বর্তমান ঠিকানা"
+required></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="submit">
+
+📨 Submit Admission
+
+</button>
+
+<div id="message">
+✅ Admission application submitted successfully!
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+
+<section class="section" id="students">
+
+<h2>🎓 Student List</h2>
+
+<div class="table-box">
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ক্রমিক</th>
+
+<th>Student Name</th>
+
+<th>Course</th>
+
+<th>Admission Date</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentList">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="contact">
+
+<h2>📞 যোগাযোগ</h2>
+
+<div class="contact">
+
+<div class="contact-card">
+
+<div class="icon">📍</div>
+
+<h3>Location</h3>
+
+<p>
+চাটমোহর নতুন বাজার,<br>
+পাবনা, বাংলাদেশ
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📞</div>
+
+<h3>Phone</h3>
+
+<p>
+<a href="tel:0174051723">
+0174051723
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="icon">📧</div>
+
+<h3>Email</h3>
+
+<p>
+<a href="mailto:abushahin161@gmail.com">
+abushahin161@gmail.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+🇯🇵 <b>Japan Language Center</b>
+</p>
+
+<p>
+চাটমোহর নতুন বাজার, পাবনা
+</p>
+
+<p>
+📞 0174051723
+</p>
+
+<p>
+📧 abushahin161@gmail.com
+</p>
+
+<p>
+© 2026 Japan Language Center
+</p>
+
+</footer>
+
+
+<script>
+
+/*
+=========================================
+STUDENT LIST
+=========================================
+*/
+
+let students =
+JSON.parse(
+localStorage.getItem("japanStudents")
+) || [];
+
+
+/*
+=========================================
+SHOW STUDENTS
+=========================================
+*/
+
+function showStudents(){
+
+const list =
+document.getElementById("studentList");
+
+list.innerHTML="";
+
+
+if(students.length===0){
+
+list.innerHTML=`
+
+<tr>
+
+<td colspan="4"
+style="text-align:center">
+
+এখনও কোনো শিক্ষার্থী ভর্তি হয়নি।
+
+</td>
+
+</tr>
+
+`;
+
+return;
+
+}
+
+
+students.forEach(
+(student,index)=>{
+
+const row =
+document.createElement("tr");
+
+row.innerHTML=`
+
+<td>
+${index+1}
+</td>
+
+<td>
+${escapeHTML(student.name)}
+</td>
+
+<td>
+${escapeHTML(student.course)}
+</td>
+
+<td>
+${student.date}
+</td>
+
+`;
+
+list.appendChild(row);
+
+});
+
+}
+
+
+/*
+=========================================
+ADMISSION SUBMIT
+=========================================
+*/
+
+document
+.getElementById("admissionForm")
+.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+
+const name =
+document.getElementById("name").value.trim();
+
+const course =
+document.getElementById("course").value;
+
+
+const today =
+new Date();
+
+
+const date =
+String(today.getDate()).padStart(2,"0")
++
+"-"
++
+String(today.getMonth()+1).padStart(2,"0")
++
+"-"
++
+today.getFullYear();
+
+
+const student={
+
+name:name,
+
+course:course,
+
+date:date
+
+};
+
+
+students.unshift(student);
+
+
+localStorage.setItem(
+"japanStudents",
+JSON.stringify(students)
+);
+
+
+showStudents();
+
+
+document
+.getElementById("message")
+.style.display="block";
+
+
+this.reset();
+
+
+setTimeout(
+function(){
+
+document
+.getElementById("message")
+.style.display="none";
+
+},
+4000
+);
+
+
+window.location.hash="students";
+
+});
+
+
+/*
+=========================================
+SECURITY
+=========================================
+*/
+
+function escapeHTML(text){
+
+const div =
+document.createElement("div");
+
+div.textContent =
+text || "";
+
+return div.innerHTML;
+
+}
+
+
+/*
+=========================================
+LOAD
+=========================================
+*/
+
+showStudents();
+
+</script>
+
+</body>
+</html>
+```
